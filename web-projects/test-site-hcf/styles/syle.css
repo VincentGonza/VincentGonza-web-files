@@ -1,0 +1,79 @@
+/* Use the follwoing below to orginze my CSS */
+/* Web Fonts ----------------------- This is use style webfonts, which I can have in a file linking
+to this css file */
+
+
+/* Base Styles --------------------- This is used to make broad changes using CSS Type sectors- 
+Such as heading, boxsixing, html element, styling the apperace of text hyper links, etc. */
+
+/* responsive images----------------This is used to code img and make them respoive on the web page*/
+
+/* Main Styles --------------------- This is used to target specfic elements- 
+Such as a p tag within a h1 tag */
+  
+
+/* Media Queries ------------------- this is used to type out media queries */
+  
+
+html {
+    font-size: 18px;
+    background: rgba(247, 161, 2, 0.808);
+}
+
+.logo {
+    text-align: left;
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    position: static;
+}
+#nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:  #333;
+}
+.nav-bar {
+    float: left;
+}
+.nav-bar a {
+    display:block;
+    color:white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.login a {
+    display:inline-block;
+    color:white;
+    margin-left: 63%;
+    text-align: right;
+    padding: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #111;
+}
+section p {
+    font-style: italic;
+
+}
+
+.photo {
+    display: block;
+    margin-top: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    max-height: auto;
+
+}
+@media screen and {max-width:320px} {
+    .nav-bar {
+        display: block
+        position: relative;
+
+    }
+}
