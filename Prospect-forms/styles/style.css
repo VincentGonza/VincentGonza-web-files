@@ -1,0 +1,10 @@
+html{
+    font-size: 10px;
+    background-image: url(/Prospect-forms/images/scott-graham-OQMZwNd3ThU-unsplash.jpg);
+    background-size: cover;
+    background-color: rgba(39, 245, 158, 0.2);
+    background-blend-mode: multiply;
+}
+.container {
+    background-color: aqua;
+}

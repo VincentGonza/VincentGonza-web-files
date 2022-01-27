@@ -1,0 +1,87 @@
+<doctype HTML>
+<html>]
+  <head>
+    <title>Prospect Form></title>
+    <meta charset="utf-8">
+    <link href="styles/style.css" rel="stylesheet">
+    <meta name="author" content= "Vincent Gonzalez">
+    <meta name="keywords" content="Prospect-Form">
+    <meta name="description" content="Tribute-page">
+    <meta name="viewport" content="width=device-width, intial-scale=1.0">
+    <link rel="shortcut icon" href="favicon-vg.ico" type="image/x-icon">
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title"> Company and Contact Form </h1>
+      <h2>Contact Information</h2>
+    <form>
+
+      <div id="form-group">
+        <fieldset>
+          <legend>What is your preferred pronoun?</legend>
+          <input type="radio" name="pronoun"id="He/Him" value="He/Him">
+          <label for="He/Him">He/Him</label>
+          <input type="radio" name="pronoun" id="She/Her"placeholder="pronoun">
+          <label for="She/Her">She/Her</label>
+          <input type="radio" name="pronoun" id="Other"placeholder="pronoun">
+          <label for="Other">Other</label>
+          <input type="text" id="please specify" placeholder="please specify here">
+          <label for="please specify"></label>
+      </fieldset>
+      </div>
+
+      <div id="form-group">
+        <input type="text" id="first-name" placeholder="First Name" required>
+        <label for="first-name">First Name</label>
+      </div>
+
+      <div id="form-group">
+        <input type="text" id="last-name" placeholder="Last Name" required>
+        <label for="last-name">Last Name</label>
+      </div>
+
+      <div id="form-group">
+        <input type="email" id="email" placeholder="Email" required>
+        <label for="email">Email</label>
+      </div>
+
+      <div id="form-group">
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"required>
+        <small>Format: 123-456-7890</small>
+      </div>
+
+      <h2>Business Snapshot</h2>
+      <p>Company or Organization Name</p>
+
+      <div id="form-group">
+        <input type="text" id="Company name" placeholder="Company name" required>
+        <label for="Company name"></label>
+    </div>
+    <p>Current Website</p>
+    <div class="subtext">
+      <p>If you have a website, place the URL here</p>
+    </div>
+
+    <div id="form-group">
+      <input type="url" name="url" id="Company url" placeholder="https://example.com" pattern="https://.*">
+      <label for="Company url">Enter an https:// URL:</label>
+  </div>
+
+  <p>What does your company do? What products and/or services do you offer?</p>
+
+  <div id="form-group">
+    <input type="text" id="what client does" placeholder="Write here">
+    <label for="what client does"></label>
+</div>
+
+
+    </form>
+
+
+
+
+
+
+  </body>
+  
