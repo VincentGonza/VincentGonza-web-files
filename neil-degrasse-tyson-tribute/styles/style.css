@@ -1,0 +1,83 @@
+html {
+    font-size:10px;
+    background-color: peachpuff;
+}
+h1{
+    display: block;
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+p {
+    font-size: 2.3rem;
+    font-family: sans-serif;
+    font-style: oblique;
+    text-align: center;
+    margin: 0 2rem 3rem;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+    
+}
+
+#img-caption {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 15px;
+}
+
+#timeline{
+    float: left;
+    max-width: 45vw;
+    min-height: 25vh;
+    text-align: left;
+    margin: 3rem 1rem 3rem 2rem;
+    line-height: 2rem;
+
+}
+#Awards{
+    float: left;
+    max-width: 45vw;
+    min-height: 25vh;
+    text-align: left;
+    line-height: 2.2rem;
+    margin: 3rem 3rem 0rem 0rem;
+}
+
+#Honors{
+    float: left;
+    max-width: 45vw;
+    min-height: 25vh;
+    text-align: left;
+    line-height: 2.2rem;
+    margin: 0rem 3rem 3rem 0rem;
+}
+
+h3{
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+}
+li{
+    font-size: 1.5rem;
+}
+blockquote{
+    text-align: center;
+    clear: both;
+    font-weight: bold;
+    font-size: 2.7rem;
+}
+cite{
+    display: block;
+}
+
+h4{
+    text-align: center;
+    font-size: 2rem;
+}
+
