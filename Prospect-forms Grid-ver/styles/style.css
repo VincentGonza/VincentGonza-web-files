@@ -24,12 +24,15 @@ fieldset {
 }
 
 h2 {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     margin: 2rem 0 0;
     text-align: center;
 }
 legend, p {
     font-size: 1.5rem;
+}
+small {
+    font-size: 1rem;
 }
 #form-group, legend{
     font-size: 1.5rem;
@@ -41,6 +44,12 @@ input, label{
     flex-direction: column;
     font-size: 1.5rem;
     margin-bottom: 10px;
+    margin:auto
+}
+p{
+    text-align: center;
+    max-width: 60vw;
+    margin: auto;
 }
 
 #gender-container input[type="radio"],
@@ -52,16 +61,19 @@ input, label{
 label{
     display: inline-block;
 }
-#name-container {
-    display: flex;
+#container1{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+}
+#container1 input[type=text],
+#container1 input[type=email],
+#container1 input[type=tel]{
+    width:30vw ;
 }
 
-#first-name, #last-name{
-    width: 28vw;
+#company-name input[type=text]{
+    width: 30vw;
 }
-#container3{
-    display: grid;
-}
-#form-group2{
-    display: inline-grid;
-}
+
