@@ -1,0 +1,123 @@
+html{
+    font-size: 10px;
+    background-image: url(/Prospect-forms/images/scott-graham-OQMZwNd3ThU-unsplash.jpg);
+    background-size: cover;
+    background-color: rgba(39, 238, 245, 0.2);
+    background-blend-mode: multiply;
+    
+}
+
+
+.container {
+    background-color: rgba(39, 182, 190, 0.6);
+    margin:auto;
+    max-width: 80%;
+}
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+fieldset {
+    text-align: center;
+    border-style: hidden;
+}
+
+h2 {
+    font-size: 2.3rem;
+    margin: 2rem 0 0;
+    text-align: center;
+}
+legend, p {
+    font-size: 1.7rem;
+}
+small {
+    font-size: 1.5rem;
+}
+#form-group, legend{
+    font-size: 1.5rem;
+    margin: auto;
+    display: auto;
+}
+input, label{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    margin: .5rem auto 0;
+}
+p{
+    text-align: center;
+    max-width: 60vw;
+    margin: auto;
+    font-size: 1.65rem;
+}
+
+#gender-container input[type="radio"],
+#gender-container input[type="text"]{
+    display: inline-block;
+    margin: 0 15px 0px 0px;
+}
+
+label{
+    display: inline-block;
+}
+#container1{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    justify-content: space-evenly;
+}
+#container1 input[type=text],
+#container1 input[type=email],
+#container1 input[type=tel]{
+    width:30vw ;
+}
+
+#company-name input[type=text]{
+    width: 45vw;
+}
+
+
+
+#form-group2 textarea[type=text]{
+    min-width: 45vw;
+    min-height: 10rem;
+    margin: .5rem auto 3rem;
+    display: block;
+    resize: none;
+}
+
+input[type=url]{
+    min-width: 45vw;
+    margin-bottom: 3rem;
+}
+
+#form-group3 label{
+    display: block;
+    text-align: center;
+}
+
+#form-group select[name=Budget-range]{
+    display: block;
+    margin: 0.5rem auto 3rem;
+    text-align: center;
+    width: 45vw;
+    font-size: 1.5rem;
+}
+
+#container3{
+    margin: 1.5rem auto 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+button{
+    display: block;
+    margin: 1.5rem auto;
+    font-size: 2rem;
+
+}
