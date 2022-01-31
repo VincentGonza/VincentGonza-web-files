@@ -50,6 +50,7 @@ p{
     text-align: center;
     max-width: 60vw;
     margin: auto;
+    font-size: 1.65rem;
 }
 
 #gender-container input[type="radio"],
@@ -74,6 +75,25 @@ label{
 }
 
 #company-name input[type=text]{
-    width: 30vw;
+    width: 45vw;
 }
 
+
+
+#form-group2 textarea[type=text]{
+    min-width: 45vw;
+    min-height: 10rem;
+    margin: 0 auto 3rem;
+    display: block;
+    resize: none;
+}
+
+input[type=url]{
+    min-width: 45vw;
+    margin-bottom: 3rem;
+}
+
+#form-group3 label{
+    display: block;
+    text-align: center;
+}
