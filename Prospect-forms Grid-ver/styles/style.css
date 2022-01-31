@@ -76,6 +76,7 @@ label{
 
 #company-name input[type=text]{
     width: 45vw;
+    text-align: center;
 }
 
 
@@ -91,6 +92,7 @@ label{
 input[type=url]{
     min-width: 45vw;
     margin-bottom: 3rem;
+    text-align: center;
 }
 
 #form-group3 label{
@@ -119,5 +121,16 @@ button{
     display: block;
     margin: 1.5rem auto;
     font-size: 2rem;
+}
 
+input[type=number] {
+    min-width: 45vw;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+#months-open label {
+    display: block;
+    text-align: center;
+    margin: 2rem auto 0rem;
 }

@@ -1,141 +1,148 @@
 <doctype HTML>
-<html>]
-  <head>
-    <title>Prospect Form</title>
-    <meta charset="utf-8">
-    <link href="styles/style.css" rel="stylesheet">
-    <meta name="author" content= "Vincent Gonzalez">
-    <meta name="keywords" content="Prospect-Form">
-    <meta name="description" content="Tribute-page">
-    <meta name="viewport" content="width=device-width, intial-scale=1.0">
-    <link rel="shortcut icon" href="favicon-vg.ico" type="image/x-icon">
-  </head>
-  <body>
-    <div class="container">
-      <h1 id="title"> Company and Contact Form </h1>
-      <h2>Contact Information</h2>
-    <form>
-      <div id="gender-container">
-        <div id="gender">
-          <fieldset>
-            <legend>What's your preferred pronoun?</legend>
-            <label for="He/Him">He/Him</label>
-            <input type="radio" name="pronoun"id="He-Him" value="He/Him">
-
-            <label for="She/Her">She/Her</label>
-            <input type="radio" name="pronoun" id="She-Her"placeholder="pronoun">
-
-            <label for="Other">Other</label>
-            <input type="radio" name="pronoun" id="Other"placeholder="pronoun">
-
-            <label for="please-specify"></label>
-            <input type="text" id="please-specify" placeholder="please specify here">
-        </fieldset>
+  <html>
+    <head>
+      <title>Prospect Form</title>
+      <meta charset="utf-8">
+      <link href="styles/style.css" rel="stylesheet">
+      <meta name="author" content= "Vincent Gonzalez">
+      <meta name="keywords" content="Prospect-Form">
+      <meta name="description" content="Tribute-page">
+      <meta name="viewport" content="width=device-width, intial-scale=1.0">
+      <link rel="shortcut icon" href="favicon-vg.ico" type="image/x-icon">
+    </head>
+    <body>
+      <div class="container">
+        <h1 id="title"> Company and Contact Form </h1>
+        <p id="description">Place your information below so we can arrange a meeting </p>
+        <h2>Contact Information</h2>
+      <form id="survey-form">
+        <div id="gender-container">
+          <div id="gender">
+            <fieldset>
+              <legend>What's your preferred pronoun?</legend>
+              <label for="He/Him">He/Him</label>
+              <input type="radio" name="pronoun"id="He-Him" value="He/Him">
+  
+              <label for="She/Her">She/Her</label>
+              <input type="radio" name="pronoun" id="She-Her"value="She-Her">
+  
+              <label for="Other">Other</label>
+              <input type="radio" name="pronoun" id="Other"value="other">
+  
+              <label for="please-specify"></label>
+              <input type="text" id="please-specify" placeholder="please specify here">
+          </fieldset>
+          </div>
+  
         </div>
-
+        <div id="container1">
+          <div id="form-group1">
+            <label for="name-label">First Name</label>
+            <input type="text" id="name" placeholder="First Name" required>
+          </div>
+  
+          <div id="form-group1">
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" placeholder="Last name" required>
+          </div>
+          <div id="form-group1">
+            <label for="email-label">Email</label>
+            <input type="email" id="email" placeholder="Email" required>
+          </div>
+  
+          <div id="form-group1">
+            <label for="phone">Phone Number</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"required>
+            <small>Format: 123-456-7890</small>
+          </div>
+        </div>
+        <h2>Business Snapshot</h2>
+        <p>Company or Organization Name</p>
+  
+        <div id="company-name">
+          <label for="Company name"></label>
+          <input type="text" id="Company-name" placeholder="Company name" required>
       </div>
-      <div id="container1">
-        <div id="form-group1">
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" placeholder="First Name" required>
-        </div>
-
-        <div id="form-group1">
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" placeholder="Last name" required>
-        </div>
-        <div id="form-group1">
-          <label for="email">Email</label>
-          <input type="email" id="email" placeholder="Email" required>
-        </div>
-
-        <div id="form-group1">
-          <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890"required>
-          <small>Format: 123-456-7890</small>
-        </div>
+  
+      <div id="months-open">
+        <label for="number-label">How many months have you been open?</label>
+        <input type="number" id="number" min="0" max="1200" placeholder="Number of months open for Business"required>
       </div>
-      <h2>Business Snapshot</h2>
-      <p>Company or Organization Name</p>
-
-      <div id="company-name">
-        <label for="Company name"></label>
-        <input type="text" id="Company-name" placeholder="Company name" required>
-    </div>
-
-    <h2>Current Website</h2>
-    <div class="subtext">
-      <p>If you have a website, place the URL here</p>
-    </div>
-
-    <div id="form-group3">
-      <label for="url">Enter an Https:// URL:</label>
-      <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*">
-    </div>
-
-      <p>What does your company do? What products and/or services do you offer?</p>
-
-      <div id="form-group2">
-        <label for="what-client-does"></label>
-        <textarea type="text" id="what-client-does" placeholder="Write here">
-          </textarea>
-        </div>
-      <p>What's your budget range? What Budget has your company allocated? There’s no right or wrong answer here. Customizable templates start at $3,000, and custom-designed websites start at $5,500. E-Commerce websites begin at $3,500. </p>
-
-    <div id="form-group">
-      <label for="Budget-range"></label>
-      <select name="Budget-range" id="Budget-range">
-        <option value= $2,500-$4,500>$2,500 - $4,500</option>
-        <option value= $4,500-$6,500>$4,500 - $6,500</option>
-        <option value= $6,500-$8,500>$6,500 - $8,500</option>
-        <option value= $8,500-$10,500>$8,500 - $10,500</option>
-        <option value= Above-$10,500>Above $10,500</option>
-      </select>
-    </div>
-
-    <p>Which aspects of your website would you like for us to work on? 
-      <div id="container3">
-        <div id="form-group">
-          <label for="FrontEnd">FrontEnd</label>
-          <input type="checkbox" id="FrontEnd" name="FrontEnd">
-        </div>
-
-        <div id="form-group">
-          <label for="BackEnd">BackEnd</label>
-          <input type="checkbox" id="BackEnd" name="BackEnd">
-        </div>
-
-        <div id="form-group">
-          <label for="Graphic-Design">Graphic Design</label>
-          <input type="checkbox" id="Graphic-Design" name="Graphic-Design">
-        </div>
-
-        <div id="form-group">
-          <label for="SEO">SEO(Search Engine Optimization)</label>
-          <input type="checkbox" id="SEO" name="SEO">
-        </div>
-
-        <div id="form-group">
-          <label for="Content-Dev">Content Development</label>
-          <input type="checkbox" id="Content-Dev" name="Content-Dev">
-        </div>
-
-        <div id="form-group">
-          <label for="Unsure">Unsure, please contact me for futher Information</label>
-          <input type="checkbox" id="Unsure" name="Unsure">
-        </div>
+  
+      <h2>Current Website</h2>
+      <div class="subtext">
+        <p>If you have a website, place the URL here</p>
       </div>
-
-
-      <button type="submit" form="form1" value="Submit"> Submit</button>
-    <br>
-    </form>
-
-
-
-
-
-
-
-  </body>
+  
+      <div id="form-group3">
+        <label for="url">Enter an Https:// URL:</label>
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*">
+      </div>
+  
+        <p>What does your company do? What products and/or services do you offer?</p>
+  
+        <div id="form-group2">
+          <label for="what-client-does"></label>
+          <textarea type="text" id="what-client-does" placeholder="Write here">
+            </textarea>
+          </div>
+        <p>What's your budget range? What Budget has your company allocated? There’s no right or wrong answer here. Customizable templates start at $3,000, and custom-designed websites start at $5,500. E-Commerce websites begin at $3,500. </p>
+  
+      <div id="form-group">
+        <label for="dropdown-label"></label>
+        <select name="Budget-range" id="dropdown">
+          <option value= $2,500-$4,500>$2,500 - $4,500</option>
+          <option value= $4,500-$6,500>$4,500 - $6,500</option>
+          <option value= $6,500-$8,500>$6,500 - $8,500</option>
+          <option value= $8,500-$10,500>$8,500 - $10,500</option>
+          <option value= Above-$10,500>Above $10,500</option>
+        </select>
+      </div>
+  
+      <p>Which aspects of your website would you like for us to work on? 
+        <div id="container3">
+          <div id="form-group">
+            <label for="FrontEnd">FrontEnd</label>
+            <input type="checkbox" id="FrontEnd" name="Checklist" value="FrontEnd">
+          </div>
+  
+          <div id="form-group">
+            <label for="Backend">BackEnd</label>
+            <input type="checkbox" id="Backend" name="Checklist" value="Backend">
+          </div>
+  
+          <div id="form-group">
+            <label for="Graphic-Design">Graphic Design</label>
+            <input type="checkbox" id="Graphic-Design" name="Checklist" value="Graphic-Design">
+          </div>
+  
+          <div id="form-group">
+            <label for="SEO">SEO(Search Engine Optimization)</label>
+            <input type="checkbox" id="SEO" name="Checklist" value="SEO">
+          </div>
+  
+          <div id="form-group">
+            <label for="Content-Dev">Content Development</label>
+            <input type="checkbox" id="Content-Dev" name="Checklist" value="Content-Dev">
+          </div>
+  
+          <div id="form-group">
+            <label for="Unsure">Unsure, please contact me for futher Information</label>
+            <input type="checkbox" id="Unsure" name="Checklist" value="Unsure">
+          </div>
+        </div>
+  
+  
+        <button type="submit" id="submit" form="form1" value="Submit"> Submit</button>
+      <br>
+      </form>
+  
+  
+  
+  
+  
+  
+  
+    </body>
+    </html>
   
