@@ -29,10 +29,10 @@ h2 {
     text-align: center;
 }
 legend, p {
-    font-size: 1.5rem;
+    font-size: 1.7rem;
 }
 small {
-    font-size: 1rem;
+    font-size: 1.5rem;
 }
 #form-group, legend{
     font-size: 1.5rem;
@@ -44,7 +44,7 @@ input, label{
     flex-direction: column;
     font-size: 1.5rem;
     margin-bottom: 10px;
-    margin:auto
+    margin: .5rem auto 0;
 }
 p{
     text-align: center;
@@ -83,7 +83,7 @@ label{
 #form-group2 textarea[type=text]{
     min-width: 45vw;
     min-height: 10rem;
-    margin: 0 auto 3rem;
+    margin: .5rem auto 3rem;
     display: block;
     resize: none;
 }
@@ -96,4 +96,28 @@ input[type=url]{
 #form-group3 label{
     display: block;
     text-align: center;
+}
+
+#form-group select[name=Budget-range]{
+    display: block;
+    margin: 0.5rem auto 3rem;
+    text-align: center;
+    width: 45vw;
+    font-size: 1.5rem;
+}
+
+#container3{
+    margin: 1.5rem auto 1.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem 2rem;
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+button{
+    display: block;
+    margin: 1.5rem auto;
+    font-size: 2rem;
+
 }
