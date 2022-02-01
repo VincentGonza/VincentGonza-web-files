@@ -1,0 +1,44 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+header{
+    font-size: 10px;
+    margin: 0;
+}
+#header{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    max-height: 5vh;
+    font-size: 2rem;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 5vh;
+    background-color: rgba(245, 38, 37, 0.24);
+}
+#contact{
+    grid-column-start: 6;
+    grid-column-end: 7;
+    text-align: center;
+}
+#profilio{
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+
+#services{
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+
+#header>img{
+    width: 100%;
+    max-height: 100%;
+}
+img{
+    height: 5vh;
+}
