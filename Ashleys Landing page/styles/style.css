@@ -13,12 +13,14 @@ header{
 #header{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
+    column-gap: 2rem;
     max-height: 5vh;
     font-size: 2rem;
     text-align: center;
     margin: 0 auto;
     line-height: 5vh;
     background-color: rgba(245, 38, 37, 0.24);
+    position: sticky;
 }
 #contact{
     grid-column-start: 6;
@@ -41,4 +43,33 @@ header{
 }
 img{
     height: 5vh;
+    object-fit: contain;
 }
+#body{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    height: 1000px;
+}
+#Party{
+    grid-column-start: 4;
+    grid-column-end: 11;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    border-style: solid; 
+}
+h2{
+    margin: 5rem auto 2rem;
+    text-align: center;
+    font-size: 4rem;
+}
+#Party input[type="email"]{
+    margin: auto;
+    display: block;
+}
+#submit{
+    margin: 3rem auto;
+    display: block;
+}
+
+
