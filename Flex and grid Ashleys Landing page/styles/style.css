@@ -6,8 +6,11 @@
 html{
     font-size: 10px;
 }
-
-#header>nav>ul{
+#header{
+    overflow: auto;
+    height: 5vh;
+}
+#header>#nav{
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     column-gap: 2rem;
@@ -17,7 +20,7 @@ html{
     margin: 0 auto;
     line-height: 5vh;
     background-color: rgba(245, 38, 37, 0.24);
-    list-style: none;
+    position: sticky;
 }
 #contact{
     grid-column-start: 6;
@@ -32,12 +35,9 @@ html{
 #services{
     grid-column-start: 4;
     grid-column-end: 5;
-    text-decoration: none;
-    border-bottom: 2rem;
 }
 
-
-#nav>img{
+#header>img{
     width: 100%;
     max-height: 100%;
 }
@@ -48,8 +48,8 @@ img{
 #body{
     display: grid;
     grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(32, 1fr);
-    height: 2000px;
+    grid-template-rows: repeat(16, 1fr);
+    height: 1000px;
 }
 #Party{
     grid-column-start: 4;
@@ -61,7 +61,7 @@ img{
 h2{
     margin: 5rem auto 2rem;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 4rem;
 }
 #Party input[type="email"]{
     margin: auto;
@@ -70,32 +70,6 @@ h2{
 #submit{
     margin: 3rem auto;
     display: block;
-}
-#premium {
-    grid-column-start: 4;
-    grid-column-end: 11;
-    grid-row-start: 7;
-    grid-row-end: 8;
-    border-style: solid; 
-    font-size: 3.5rem;
-    text-align: center;
-    font-weight: bold;
-
-}
-#premium-box{
-    grid-column-start: 4;
-    grid-column-end: 11;
-    grid-row-start: 8;
-    grid-row-end: 12;
-    border-style: solid; 
-}
-
-#Quality-box{
-    grid-column-start: 4;
-    grid-column-end: 11;
-    grid-row-start: 14;
-    grid-row-end: 18;
-    border-style: solid; 
 }
 
 
