@@ -48,8 +48,8 @@ img{
 #body{
     display: grid;
     grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(32, 1fr);
-    height: 2000px;
+    grid-template-rows: repeat(43, 1fr);
+    height: auto;
 }
 #Party{
     grid-column-start: 4;
@@ -138,3 +138,102 @@ iframe{
     grid-row-end: 30;
     margin: auto;
 }
+
+#pricing{
+    grid-column-start: 4;
+    grid-column-end: 11;
+    grid-row-start: 32;
+    grid-row-end: 33;
+    border-style: solid;
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+#Basic{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 34;
+    grid-row-end: 35;
+    border-style: solid; 
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+#Basic-Package-box{
+    grid-column-start: 2;
+    grid-column-end: 5;
+    grid-row-start: 35;
+    grid-row-end: 42;
+    border-style: solid; 
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+#Standard{
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 34;
+    grid-row-end: 35;
+    border-style: solid; 
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#Standard-Package-box{
+    grid-column-start: 6;
+    grid-column-end: 9;
+    grid-row-start: 35;
+    grid-row-end: 42;
+    border-style: solid; 
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#Expert{
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 34;
+    grid-row-end: 35;
+    border-style: solid; 
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+#Expert-Package-box{
+    grid-column-start: 10;
+    grid-column-end: 13;
+    grid-row-start: 35;
+    grid-row-end: 42;
+    border-style: solid; 
+    font-size: 3.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+#footer{
+    display: grid;
+    grid-template-columns: 70vw repeat(3, 1fr);
+    column-gap: 2rem;
+    max-height: 5vh;
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: none;
+}
+#footer a, 
+li{
+    text-decoration: none;
+    font-style: normal;
+    list-style: none;
+}
+#copy-right{
+    display: grid;
+    grid-template-columns: 90vw 1fr;
+    min-height: 2vh;
+    height: 100%;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 1rem;
+    
+}
+
