@@ -18,6 +18,7 @@ html{
     line-height: 5vh;
     background-color: rgba(245, 38, 37, 0.24);
     list-style: none;
+    position: ;
 }
 #contact{
     grid-column-start: 6;

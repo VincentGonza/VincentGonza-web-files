@@ -1,12 +1,31 @@
-html{
+ul{
     margin: 0;
     padding: 0;
 }
 #header-img{
-    height:15vh
+    height: 7vh;
+    object-fit:contain;
+    margin: 0;
+    padding: 0;
 }
 #nav-grid{
     display: grid;
     grid-template-columns: 65vw repeat(3, 1fr);
     height: 7vh;
+    margin: 0 0 ;
+    width: 100vw;
 }
+.nav-link{
+    list-style-type: none;
+    text-align: center;
+    margin: auto;
+}
+/*body grid start*/
+
+#body{
+    display: grid;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows:auto;
+    height:auto;
+}
+
