@@ -1,0 +1,12 @@
+html{
+    margin: 0;
+    padding: 0;
+}
+#header-img{
+    height:15vh
+}
+#nav-grid{
+    display: grid;
+    grid-template-columns: 65vw repeat(3, 1fr);
+    height: 7vh;
+}
