@@ -26,6 +26,6 @@ ul{
     display: grid;
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows:auto;
-    height:auto;
+    height:5rem;
 }
 
