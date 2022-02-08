@@ -29,10 +29,26 @@ ul{
     display: grid;
     min-width: 100vw;
     max-width: 100vw;
-    grid-template-columns: 1fr repeat(4, 1fr);
-    grid-template-rows: 1fr repeat(4, 1fr)
-#textbox-1 {
-    grid-column-start: 6;
-    grid-column-end: 7;
-    text-align: center;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(13, 1fr);
+    height:1000px;
+}
+#coffee1 {
+    grid-column-start: 3;
+    grid-column-end: 6;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background-color: aqua;
+}
+#coffee1-text{
+    grid-area: 6/3/7/6;
+    background-color:brown;
+}
+#coffee2 {
+    grid-area: 2/6/6/9;
+    background-color: blueviolet;
+}
+#coffee3 {
+    grid-area: 2/9/6/12;
+    background-color:burlywood;
 }

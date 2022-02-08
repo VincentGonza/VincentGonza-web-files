@@ -1,0 +1,25 @@
+#container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows:100px auto 100px;
+    height: 200vh;
+}
+ #header {
+     grid-column-start: 1;
+     grid-column-end: 13;
+     background-color: aqua;
+ }
+ #nav-container{
+     display: grid;
+
+ }
+ main{
+     grid-column-start: 1;
+     grid-column-end: 13;
+     background-color: aquamarine;
+ }
+ footer {
+     grid-column-start: 1;
+     grid-column-end: 13;
+     background-color: blueviolet;
+ }
