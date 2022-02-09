@@ -97,6 +97,25 @@ ul{
     height:2rem;
     font-size: 1.3rem;
 }
+footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    gap: 4rem;
+    margin-top: 100px;
+    list-style: none;
+}
+footer span{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    margin: 2rem 0 0;
+}
+
+footer{
+    background-color: aqua;
+    
+}
 
 
 
