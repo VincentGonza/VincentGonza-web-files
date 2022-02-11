@@ -7,27 +7,36 @@ ul{
     padding: 0;
 }
 #header-img{
-    height: 7vh;
-    object-fit:contain;
-    margin: 0;
+    height: 5vh;
+    margin: 0 0 0 2rem;
     padding: 0;
 }
 #nav-grid{
     display: grid;
     grid-template-columns: 65vw repeat(3, 1fr);
-    height: 7vh;
+    height: 5vh;
     margin: 0 0 ;
     width: 100vw;
+    position: fixed;
 }
 .nav-link{
     list-style-type: none;
     text-align: center;
     margin: auto;
+    font-size: 1.5rem;
+    background-color: rgba(247, 204, 48, 0.72);
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    width: 80px;
+    font-weight: bold;
+}
+.nav-link a{
+    text-decoration: none;
+    color: black;
 }
 /*Coffee section grid start*/
 #coffee-section{
     display: grid;
-    min-width: 100vw;
     max-width: 100vw;
     grid-template-columns: repeat(13, 1fr);
     grid-template-rows: repeat(16, 1fr);
@@ -38,7 +47,6 @@ ul{
     grid-column-end: 6;
     grid-row-start: 2;
     grid-row-end: 6;
-    background-color: aqua;
 }
 #textbox-1{
     grid-area: 6/3/7/6;
@@ -49,7 +57,6 @@ ul{
 }
 #coffee2 {
     grid-area: 2/6/6/9;
-    background-color: blueviolet;
 }
 #coffee2-text{
     grid-area: 6/6/7/9;
@@ -60,7 +67,6 @@ ul{
 }
 #coffee3 {
     grid-area: 2/9/6/12;
-    background-color:burlywood;
 }
 #coffee3-text{
     grid-area: 6/9/7/12;
@@ -88,7 +94,7 @@ ul{
     width: 70vw;
     height:200px;
     margin:0 auto 100px;
-    background-color: yellow;
+    background-color: rgba(247, 204, 48, 0.68);
     border-style: solid;
     border-radius: 25px;
     border-width: 5px;
@@ -116,6 +122,7 @@ ul{
     font-size: 1.3rem;
     box-shadow: inset;
 }
+
 footer ul{
     display: flex;
     flex-direction: row;
@@ -123,6 +130,7 @@ footer ul{
     gap: 4rem;
     margin-top: 100px;
     list-style: none;
+    max-width: 100%;;
 }
 footer span{
     display: flex;
@@ -132,8 +140,17 @@ footer span{
 }
 
 footer{
-    background-color: aqua;
-    width: 100vw;
+    background-color: rgba(190, 204, 62, 0.68);
+    ;
+}
+footer li{
+    font-size: 1.5rem;
+    margin: 0 3rem;
+    color
+}
+footer a{
+    text-decoration: none;
+    color:black;
 }
 #coffee1 img{
     width: 100%;
@@ -152,7 +169,14 @@ footer{
 #submit{
     cursor: pointer;
 }
-
+footer span{
+    font-size: 1.2rem;
+}
+@media screen and (max-width:600px) {
+    body{
+        background-color: aqua
+    }
+}
   
 
 
