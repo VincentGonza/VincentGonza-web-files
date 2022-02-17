@@ -1,0 +1,78 @@
+html{
+    font-size: 10px;
+}
+#navbar{
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  min-width: 20vw; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: gray; 
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  border-right: solid;
+}
+#navbar a{
+    text-decoration: none;
+    color: black ;
+}
+#navbar a:visited{
+    color: black;
+}
+#navbar ul{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#navbar li{
+    height: 40px;
+    font-size: 2rem;
+    margin:15px 0;
+    text-align: center;
+    content:inherit;
+    border-top: 1px solid;
+}
+
+h1{
+    font-size: 3rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#main-doc{
+    margin-left: 25vw;
+    margin-top: 5vh;
+    position:absolute;
+}
+h2 {
+    font-size: 2rem;
+    text-decoration: underline;
+}
+p, 
+code{
+    font-size: 1.4rem;
+}
+
+#main-doc li{
+    font-size: 1.4rem;
+}
+
+h3{
+    font-size: 1.7rem;
+}
+
+footer{
+    margin-left: 25vw;
+    text-align: right;
+    margin-right: 2vw;
+    position: absolute;
+}
+
+#comments_section{
+    position: static;
+}
+body {
+    font-family: 'Open Sans', Arial, sans-serif;
+    line-height: 1.5;
+}
