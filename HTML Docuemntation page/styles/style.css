@@ -12,6 +12,7 @@ html{
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 20px;
   border-right: solid;
+  background-color: #8192C3;
 }
 #navbar a{
     text-decoration: none;
@@ -32,6 +33,10 @@ html{
     text-align: center;
     content:inherit;
     border-top: 1px solid;
+    font-weight: bold;
+}
+#navbar li:hover{
+    text-decoration: underline;
 }
 
 h1{
@@ -74,4 +79,41 @@ footer{
 body {
     font-family: 'Open Sans', Arial, sans-serif;
     line-height: 1.5;
+    background-color: #C3B281;
+}
+
+@media only screen and (max-width : 870px) {
+   #navbar{
+    height: 20vh; /* Full-height: remove this if you want "auto" height */
+    min-width: 100vw; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #8192C3; 
+    overflow-y: scroll; 
+    border-right: solid;
+  }
+  
+#navbar li{
+    height: 15px;
+    font-size: 1.5rem;
+    margin: 15px 0;
+    text-align: center;
+    content:inherit;
+    border-top: 1px solid;
+    font-weight: bold;
+}
+#main-doc{
+    margin: auto 10vw;
+    margin-top:26vh;
+}
+
+h1{
+    font-size: 2rem;
+    text-align: center;
+    text-decoration: underline;
+    margin: 0%;
+}
+
 }
