@@ -3,11 +3,21 @@
     padding: 0; 
     margin: 0;
 }
+html{
+    min-height: 300vh;
+}
+#nav-bar-container{
+    position: fixed;
+    min-width: 100%;
+    background-color: aquamarine;
+}
 #nav-bar{
-        display: grid;
-        grid-template-rows: 65vw repeat(3, 1fr);
-        height: 5vh;
-        margin: 0 0 ;
-        width: 100vw;
-        background-color:rgba(245, 146, 145, 0.29);
-    }
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+#nav-bar a{
+    display: inline-block;
+    text-decoration: none;
+    grid-column-start: 9;
+    grid-column-end: 12;
+}
