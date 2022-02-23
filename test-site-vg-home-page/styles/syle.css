@@ -10,14 +10,32 @@ html{
     position: fixed;
     min-width: 100%;
     background-color: aquamarine;
+    height: 8vh;
+    margin-bottom: 10vh;
 }
 #nav-bar{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
 }
 #nav-bar a{
-    display: inline-block;
     text-decoration: none;
+}
+#nav-bar li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    display: inline;
+}
+#nav-bar li:nth-child(1){
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
     grid-column-start: 9;
-    grid-column-end: 12;
+}
+#welcome {
+    box-sizing:border-box;
+    margin: 8vh;
+
 }
