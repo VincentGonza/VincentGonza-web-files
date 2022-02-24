@@ -9,7 +9,7 @@ html{
 #nav-bar-container{
     position: fixed;
     min-width: 100%;
-    background-color: aquamarine;
+    background-color: #FF882B;
     height: 10vh;
 
 }
@@ -41,14 +41,65 @@ html{
 }
 #welcome {
     box-sizing:border-box;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(30, 1fr);
-    height: 400vh;
-    padding-top: 10vh;
+    height: 100vh;
+    padding-top: 40vh;
+    background-color: #2BA1FF;
 }
 body{
     position:relative;
 }
+#intro {
+    margin: auto;
+    width:70%;
+    text-align: center;
+    font-size: 4rem;
+}
+#welcome-subtext{
+    text-align: center;
+    font-size: 3rem;
+}
+#portfolio {
+    height: 180vh;
+    background-color: blanchedalmond;
+}
+h2{
+    text-align: center;
+    padding-top: 10vh;
+    font-size: 3rem;
+}
+#grid-section {
+    display: grid;
+    height: 160vh;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(15,1fr);
+}
+
+#gallery-1{
+    grid-row-start: 2;
+    grid-row-end: 7;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+#gallery-2{
+    grid-row-start: 2;
+    grid-row-end: 7;
+    grid-column-start: 8;
+    grid-column-end: 13;
+}
+#gallery-3{
+    grid-row-start: 8;
+    grid-row-end: 15;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+#gallery-4{
+    grid-row-start: 8;
+    grid-row-end: 15;
+    grid-column-start: 8;
+    grid-column-end: 13;
+}
+
 
 
