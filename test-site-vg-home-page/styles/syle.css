@@ -4,21 +4,26 @@
     margin: 0;
 }
 html{
-    min-height: 300vh;
+    min-height: 400vh;
 }
 #nav-bar-container{
     position: fixed;
     min-width: 100%;
     background-color: aquamarine;
-    height: 8vh;
-    margin-bottom: 10vh;
+    height: 10vh;
+
 }
 #nav-bar{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
+    justify-content: center;
+    height:10vh;
+    align-items:center;
 }
 #nav-bar a{
     text-decoration: none;
+    height:10vh;    
+
 }
 #nav-bar li{
     padding: 0;
@@ -36,6 +41,14 @@ html{
 }
 #welcome {
     box-sizing:border-box;
-    margin: 8vh;
-
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(30, 1fr);
+    height: 400vh;
+    padding-top: 10vh;
 }
+body{
+    position:relative;
+}
+
+
