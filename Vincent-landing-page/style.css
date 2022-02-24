@@ -6,7 +6,7 @@ body {
     background-color: #70d3f4;
 }
 footer {
-  background: #70d3f4;
+  background: #f2f2f2;;
   margin-bottom: 0;
 
 }
@@ -42,7 +42,7 @@ a {
     text-decoration: underline;
 }
 a:hover {
-    color: #D29C97;
+    color: black;
 }
 a:focus {
     color: #247BA0;
