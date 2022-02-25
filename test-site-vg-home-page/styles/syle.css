@@ -5,6 +5,7 @@
 }
 html{
     min-height: 400vh;
+    scroll-behavior: smooth;
 }
 #nav-bar-container{
     position: fixed;
@@ -39,7 +40,7 @@ html{
     text-align: center;
     grid-column-start: 9;
 }
-#welcome {
+#welcome-section {
     box-sizing:border-box;
     height: 100vh;
     padding-top: 40vh;
@@ -58,7 +59,7 @@ body{
     text-align: center;
     font-size: 3rem;
 }
-#portfolio {
+#projects {
     height: 180vh;
     background-color: blanchedalmond;
 }
@@ -75,13 +76,13 @@ h2{
     grid-template-rows: repeat(15,1fr);
 }
 
-#gallery-1{
+#project-tile{
     grid-row-start: 2;
     grid-row-end: 6;
     grid-column-start: 2;
     grid-column-end: 7;
 }
-#gallery-1 img{
+#project-tile img{
     max-height: 100%;
     max-width: 100%;
     min-width: 100%;
@@ -163,4 +164,27 @@ h2{
     background-color: #2BA1FF;
 }
 
+#contact-subtext{
+    text-align: center;
+    font-size: 1.5rem;
+}
+#contact {
+    display: grid;
+    height: 80vh;
+    grid-template-columns: repeat(13, 1fr);
+    grid-template-rows: repeat(15,1fr);
+}
+#github{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+#github img{
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+}
 

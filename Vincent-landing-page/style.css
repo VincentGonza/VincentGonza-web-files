@@ -4,6 +4,7 @@ body {
     height: 100%;
     color: #2E3532;
     background-color: #70d3f4;
+    scroll-behavior: smooth;
 }
 footer {
   background: #f2f2f2;;
