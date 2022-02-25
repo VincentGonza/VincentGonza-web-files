@@ -172,19 +172,34 @@ h2{
     display: grid;
     height: 80vh;
     grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(15,1fr);
+    grid-template-rows: repeat(10,1fr);
 }
 #github{
     grid-row-start: 2;
-    grid-row-end: 6;
+    grid-row-end: 3;
     grid-column-start: 2;
-    grid-column-end: 7;
+    grid-column-end: 4;
 }
 #github img{
     max-height: 100%;
     max-width: 100%;
     min-width: 100%;
     min-height: 100%;
-    object-fit: cover;
+    object-fit:contain;
 }
+
+#linkedin{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 6;
+    grid-column-end: 8;
+}
+#linkedin img{
+    max-height: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit:contain;
+}
+
 
