@@ -4,13 +4,13 @@
     margin: 0;
 }
 html{
-    min-height: 400vh;
+    height: auto;
     scroll-behavior: smooth;
 }
 #nav-bar-container{
     position: fixed;
     min-width: 100%;
-    background-color: #FF882B;
+    background-color: rgba(255, 228, 78, 1);
     height: 10vh;
 
 }
@@ -23,7 +23,8 @@ html{
 }
 #nav-bar a{
     text-decoration: none;
-    height:10vh;    
+    height:10vh;  
+    color:#FF715B;  
 
 }
 #nav-bar li{
@@ -32,6 +33,7 @@ html{
     list-style: none;
     text-align: center;
     display: inline;
+    
 }
 #nav-bar li:nth-child(1){
     padding: 0;
@@ -44,7 +46,7 @@ html{
     box-sizing:border-box;
     height: 100vh;
     padding-top: 40vh;
-    background-color: #2BA1FF;
+    background-color:rgb(151, 223, 252)
 }
 body{
     position:relative;
@@ -61,7 +63,7 @@ body{
 }
 #projects {
     height: 180vh;
-    background-color: blanchedalmond;
+    background-color: #FFC857;
 }
 h2{
     text-align: center;
@@ -167,18 +169,22 @@ h2{
 #contact-subtext{
     text-align: center;
     font-size: 1.5rem;
+    background-color: #97DFFC;
+
 }
 #contact {
     display: grid;
-    height: 80vh;
+    height: 60vh;
     grid-template-columns: repeat(13, 1fr);
-    grid-template-rows: repeat(10,1fr);
+    grid-template-rows: repeat(4,1fr);
+    background-color: #97DFFC;
+
 }
 #github{
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 2;
-    grid-column-end: 4;
+    grid-column-start: 4;
+    grid-column-end: 7;
 }
 #github img{
     max-height: 100%;
@@ -191,8 +197,8 @@ h2{
 #linkedin{
     grid-row-start: 2;
     grid-row-end: 3;
-    grid-column-start: 6;
-    grid-column-end: 8;
+    grid-column-start: 8;
+    grid-column-end: 11;
 }
 #linkedin img{
     max-height: 100%;
@@ -200,6 +206,45 @@ h2{
     min-width: 100%;
     min-height: 100%;
     object-fit:contain;
+}
+
+#letswork{
+    text-align: center;
+    padding-top: 30vh;
+    font-size: 3rem;
+    text-decoration: underline;
+    background-color: #97DFFC;
+}
+#linkedin:hover,
+#github:hover {
+    transform: translateY(12px);
+  }
+
+footer{
+    height: 10vh;
+    background-color: rgba(255, 228, 78, 1);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4,1fr);
+}
+
+footer p{
+    grid-row-start: 4;
+    grid-row-end: 5;
+    grid-column-start: 3;
+    grid-column-end: 5;
+    font-size: 1.1rem;
+    text-align: center;
+}
+#home{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: #FF715B;
 }
 
 
