@@ -11,21 +11,27 @@ html{
     position: fixed;
     min-width: 100%;
     background-color: rgba(255, 228, 78, 1);
-    height: 10vh;
+    background-color: #d3d3d3;
+    height: 7vh;
 
 }
 #nav-bar{
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     justify-content: center;
-    height:10vh;
+    height: 7vh;
     align-items:center;
 }
 #nav-bar a{
     text-decoration: none;
-    height:10vh;  
+    height: 7vh;
+    color:black;  
+}
+#nav-bar a:hover{
+    text-decoration: none;
+    height: 7vh;
     color:#FF715B;  
-
+    text-decoration: underline;
 }
 #nav-bar li{
     padding: 0;
@@ -33,7 +39,8 @@ html{
     list-style: none;
     text-align: center;
     display: inline;
-    
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 #nav-bar li:nth-child(1){
     padding: 0;
@@ -46,7 +53,7 @@ html{
     box-sizing:border-box;
     height: 100vh;
     padding-top: 40vh;
-    background-color:rgb(151, 223, 252)
+    background-color:rgb(151, 223, 252);
 }
 body{
     position:relative;
@@ -168,8 +175,9 @@ h2{
 
 #contact-subtext{
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     background-color: #97DFFC;
+    font-style: italic;
 
 }
 #contact {
@@ -211,9 +219,10 @@ h2{
 #letswork{
     text-align: center;
     padding-top: 30vh;
-    font-size: 3rem;
+    font-size: 4rem;
     text-decoration: underline;
     background-color: #97DFFC;
+    padding-bottom: 50px;
 }
 #linkedin:hover,
 #github:hover {
@@ -221,11 +230,11 @@ h2{
   }
 
 footer{
-    height: 10vh;
-    background-color: rgba(255, 228, 78, 1);
+    height: 6vh;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(4,1fr);
+    background-color: #d3d3d3;
 }
 
 footer p{
@@ -234,7 +243,9 @@ footer p{
     grid-column-start: 3;
     grid-column-end: 5;
     font-size: 1.1rem;
-    text-align: center;
+    text-align: right;
+    padding-right: 30px;
+    padding-bottom: 10px;
 }
 #home{
     grid-row-start: 2;
@@ -244,7 +255,18 @@ footer p{
     font-size: 1.5rem;
     text-align: center;
     text-decoration: none;
-    color: #FF715B;
+    color: black;
+}
+
+#home:hover{
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: underline;
+    color:#FF715B;  
 }
 
 
