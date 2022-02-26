@@ -513,7 +513,6 @@ footer p{
         display: inline;
         font-size: 1.5rem;
         font-weight: bold;
-        padding: ;
     }
     #nav-bar li:nth-child(1){
         padding: 0;
@@ -521,7 +520,6 @@ footer p{
         list-style: none;
         text-align: center;
         grid-column-start: 1;
-        padding:;
     }
     #projects {
         height: 270vh;
@@ -762,4 +760,3 @@ footer p{
 }
 }
 */
-
