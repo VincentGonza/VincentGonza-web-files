@@ -157,6 +157,7 @@ p, ul {
 }
 .bottom-nav > a {
   color: #D5573B;
+  display: block;
 }
 .credits {
   margin-top: -12px;
