@@ -1,0 +1,329 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+    color: #2E3532;
+    background-color: whitesmoke;
+    scroll-behavior: smooth;
+}
+footer {
+  background: #f2f2f2;;
+  margin-bottom: 0;
+
+}
+.navbar {
+  padding-top: 0px;
+  padding-bottom: 0px;
+
+  margin-bottom: 8px;
+}
+.navbar-light {
+  background: #F49170;
+}
+.page-sections {
+	position: relative;
+}
+
+.header{
+  min-height: 100vh;
+    background: url(./keyboard.jpg) no-repeat;
+    background-size:100vw;
+    background-repeat:no-repeat;
+    max-height: 100vh;
+  }
+)
+/* P O R T F O L I O */
+
+
+#portfolio{
+	padding: 80px 0;
+    background: #EBEEEE;
+}
+
+
+#portfolio h2{
+    padding: 0;
+    margin: auto;
+    margin-bottom: 50px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+
+#portfolio img{
+	max-width: 100%;
+}
+
+#portfolio .row > div{
+	margin-bottom: 1.5rem;
+    position: relative;
+}
+
+
+
+#portfolio .row div .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: calc(100% - 30px);
+    transform: scale(0);
+    margin: auto;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    background: rgba(0, 0, 0, .55);
+    border-radius: 20%;
+}
+
+#portfolio .row div:hover .overlay {
+    opacity: 1;
+    transform: scale(1);
+    height: 100%;
+    border-radius: 0;
+}
+
+#portfolio .row div .overlay h3{
+    color: #f7f7f7;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -200%);
+            transform: translate(-50%, -200%);
+    -ms-transform: translate(-50%, -200%);
+    letter-spacing: .05em;
+}
+
+.overlay h3.project-title{
+    -webkit-transform: translate(-50%, -50%) !important;
+            transform: translate(-50%, -50%) !important;
+    -ms-transform: translate(-50%, -50%) !important;
+}
+
+/* ending of section*/
+.navbar-toggler {
+  margin-top: 10px;
+  background: transparent;
+  
+}
+.navbar-toggler:focus{
+ outline: none;
+}
+.navbar-toggler:hover{
+   border: 2px solid #D29C97;
+
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+a {
+    color: #247BA0;
+    text-decoration: underline;
+}
+a:hover {
+    color: black;
+}
+a:focus {
+    color: #247BA0;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Work Sans', sans-serif;
+}
+h1 {
+  font-size: 4.75rem;
+  margin-top: 75px;
+
+}
+.data{
+  font-size: 3.0rem;
+}
+h2 {
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding-bottom: 2rem;
+
+}
+h3 {
+  font-size: 1.5rem;
+}
+p, ul {
+  font-size: 18px;
+}
+.lead {
+  font-size: 24px;
+  padding-bottom: 2rem;
+}
+.headline-list {
+  font-size: 1.5rem;
+}
+.headline-list > li {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.header {
+  position: relative;
+  width: 100%;
+  min-height: 90vh;
+  padding-left: 2rem;
+     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+.intro {
+  padding-top: 14rem;
+  padding-bottom: 14rem;
+ 
+}
+.btn-secondary {
+  background: #E7AF00;
+  border-radius: 100px;
+  padding: 2px 14px;
+  margin-top: 1rem;
+  color: #2E3532;
+  border: 3px solid #2E3532;
+}
+.btn-secondary:hover {
+  background: #247BA0;
+  color: #E7AF00;
+  border: 3px solid #247BA0;
+}
+.service-name {
+  padding-top: 1rem;
+  text-transform: uppercase;
+   font-family: 'Work Sans', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+.service-description {
+  padding-bottom: 2rem;
+  margin-top: -8px;
+}
+.portfolio-item {
+  padding-bottom: 2rem;
+
+}
+.img-fluid {
+  border: 4px solid #D5573B;
+
+}
+.project-title {
+  font-size: 1.25rem;
+  padding-top: 8px;
+}
+.project-link {
+  font-size: 1rem;
+}
+.card-header {
+  background: #F2F2F2;
+
+ 
+}
+.card-header > h3 > a {
+  color: #247BA0;
+  text-decoration: none; 
+  text-transform: uppercase;
+ 
+}
+.card-header > h3 > a:hover {
+  text-decoration: underline;  
+}
+.job-title {
+ 
+  font-size: 20px;
+  
+}
+.job-details {
+  font-size: 16px;
+  margin-bottom: -1px;
+}
+.bottom-nav > a {
+  color: #D5573B;
+}
+.credits {
+  margin-top: -12px;
+}
+
+/* Section padding */
+
+.services {
+    padding: 50px 0;
+}
+.portfolio {
+  padding: 50px 0;
+}
+.experience {
+  padding: 50px 0;
+}
+.contact {
+  padding: 50px 0;
+}
+.footer {
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+/* media queries */
+@media (max-width: 780px) {
+  h1 {
+    font-size: 4rem;
+  }
+  .intro {
+    padding-top: 12rem;
+  }
+}
+ @media (max-width: 560px) {
+h1 {
+  font-size: 2.75rem;
+}
+h2 {
+  font-size: 2.5rem;
+
+}
+h3 {
+  font-size: 1.5rem;
+}
+p, ul {
+  font-size: 18px;
+}
+.lead {
+  font-size: 18px;
+  padding-bottom: 2rem;
+}
+.headline-list {
+  font-size: 1.25rem;
+}
+.headline-list > li {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+.header {
+    padding-left: .1rem;
+}
+.intro {
+  padding-top: 12rem;
+  padding-bottom: 16rem;
+  }
+     
+  }
+
+@media (max-width: 380px) {
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+
+.intro {
+  padding-top: 12rem;
+  padding-bottom: 14rem;
+  }
+ 
+}
