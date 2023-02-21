@@ -108,7 +108,70 @@
 	<p>The first thing that we need to do is to unlock all the excel files. Since the password is the same for each file this can best be accomplished by using Visual Basics Applications (<a href="https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office">Visit the VBA Getting Started page)</a>. First open a new excel file on the desktop, click on the Developer tab in the excel Ribbon. If you do not see the developer tab in excel then you would need to activate this setting, please use this guide as a template (<a href="https://www.excelcampus.com/vba/enable-developer-tab/">how to enable VBA)</a></p>
 	<P>We would then click visual basic, insert and then Module. After the process is completed, the screen should look like this.</P>
 	<img src="VBA1.png" height="500px" width="700px">
+	<p>Enter the following code below into the module. </p>
+	<div class="code-container">
+		<pre class="code-block">
+		  <code class="language-vba">
+			'Used to remove passwords in a folder. Just need to adjust the code with the updated password. This also places the unlocked files into a new folder named "Password Removed Files".
+			Sub test()
+			  Dim WB As Workbook
+			  Dim xFd As FileDialog
+			  Dim xFdItem As Variant
+			  Dim xFileName As String
+			  Set xFd = Application.FileDialog(msoFileDialogFolderPicker)
+	  
+			  If xFd.Show = -1 Then
+				xFdItem = xFd.SelectedItems(1) & Application.PathSeparator
+				xFileName = Dir(xFdItem & "*.xls*")
+				MkDir xFdItem & "\Password Removed Files"
+				Do While xFileName <> ""
+				  Set WB = Workbooks.Open((xFdItem & xFileName), Password:="Password")
+	  
+				  WB.SaveAs FileName:=xFdItem & "Password Removed Files\" & xFileName, FileFormat:=51, Password:="", WriteResPassword:="", _
+				  ReadOnlyRecommended:=False, CreateBackup:=False
+	  
+				  WB.Close True
+	  
+				  xFileName = Dir
+				Loop
+			  End If
+			End Sub
+		  </code>
+		</pre>
+	  </div>
+	  
+	  <style>
+		.code-container {
+		  max-width: 100%;
+		  overflow-x: auto;
+		}
+		
+		.code-block {
+		  background-color: #f5f5f5;
+		  padding: 10px;
+		  border-radius: 5px;
+		  font-size: 12px;
+		  font-family: 'Courier New', monospace;
+		  white-space: pre-wrap;
+		}
+		
+		.language-vba {
+		  color: #800000;
+		}
+	  </style>
+	  <p>Then hit the run button. This will open file explorer, select the folder that requires the passwords to be removed.  The code will execute and unlock all the excel files in the batch and create a new folder named Password Removed Files which houses all the files that have had their password protection removed. </p>
+	  <h3>Step3: Extracting all the data from the excel files</h3>
+	  <p>Next, how do we extract the results from the excel files? This is especially important since each of these files can have between 2,500 to 80,000 rows of data per a file. Using Power Query, we can extract the details of all the excel files. This can be achieved by doing the following. </p>
 
+<p>Open a blank excel file, Go to Data on the ribbon tab, Get data, From File then from Folder. File explorer will open, navigate to the folder named Password Removed Files and click ok. The query will load and excel will provide a recommended query based on the data.</p>
+<img src="PowerQuery.png" height="500px" width="700px">
+<p>Click Combine arrow by combine and select combine and transform data. Select sheet1 and click ok. The following should pop up. Click Close and Load on the upper right side. Save the excel file that loads, this will be used for future 3rd party files provided, I have named it “Query 3rd party 12-20-22”.</p>
+<img src="PowerQuery2.png" height="500px" width="700px">
+<p>Then copy and paste the values from this file into a separate excel file for uploading. It should look like the following image below. </p>
+<img src="PowerQuery3.png" height="500px" width="700px">
+<p>In order to prep this file for upload we can do the process that we previously mentioned but it would be time consuming, instead lets us a VBA macro to complete this process. </p>
+<p>After the data has been combined, we need to cleanse our data since a lot of data that is transmitted to us doesn’t get used. A simple sort to identify the outliers and remove them from the list is required. To do this select the sort option in excel, then Restrict the search to Items on column A that start with “C-XXXX”, “B-xxxx” & “Z-XXXX”. Then apply an additional cross filter in column D for values of “Y”. </p>
+<p>This file had now been processed and ready for processing, be sure to copy the file to a new excel file for processing with our uploading team.</p>
 </div>
       </div>
       
