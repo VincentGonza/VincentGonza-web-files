@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3rd Party files</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 2rem;
+			font-weight: bold;
+			margin: 0;
+			padding: 1rem;
+			text-align: center;
+		}
+		h2 {
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin-top: 2rem;
+		}
+		p {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+		ol {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			padding-left: 2rem;
+		}
+		li {
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
+		a {
+			color: #008080;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		img {
+			max-width: 100%;
+		}
+		.container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 1rem;
+		}
+		.process {
+			margin-bottom: 2rem;
+		}
+		.challenge {
+			background-color: #f1f1f1;
+			border-left: 5px solid #008080;
+			margin-bottom: 2rem;
+			padding: 1rem;
+		}
+		.solution {
+			background-color: #d9edf7;
+			border-left: 5px solid #31708f;
+			margin-bottom: 2rem;
+			padding: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>3rd Party files</h1>
+		<div class="process">
+			<p><strong>NOTE:</strong> ALL SENSATIVE DATA CONTAINED WITHIN THIS READING HAS BEEN REMOVED, THE CLOUMN AND CELL PLACEMENTS ARE AMMENDED DUE TO PRIVACIY CONCERNS. THE LOGIC AND TIME TO PROCESS ARE REAL.</p>
+		</div>
+		<div class="challenge">
+			<h2>Process:</h2>
+			<p>We receive files from a vendor that is our competitor but due to legal reasons they have to send us the requested data. The data houses information relating to shareholders that we need to upload to our database.</p>
+		</div>
+		<div class="challenge">
+			<h2>Challenge:</h2>
+			<p>The process is manual, each file is password protected, taking 2 to 5 days to complete due to competing priorities, the value of the data can range from 2,500 to 80,000 rows per a file.</p>
+		</div>
+		<div class="solution">
+			<h2>Solution:</h2>
+			<p>Using Excel, VBA and power query this process was streamlined to be completed in 15 minutes. A time savings of 2 to 5 days of manual work.</p>
+			<p>Old process of completing the task - If you would like to skip ahead to the part that I improved, please click <a href="#improvement">here</a>.</p>
+		</div>
+		<div class="details">
+			<h2 id="improvement">Details of the Old Process:</h2>
+			<p>The file(s) are sent to are sent to us using FTP (File Transfer Protocol) the password is the same for each file, for the sake of this writing it’s Password see image 1 below.  </p>
+			<img src="mockFTP.png" height="500px" width="700px">
+			<p><i>Image 1: Mock FTP folder</i></p>
+      <p>Open the file and input the password, for the sake of this reading it’s Password. The file headers are few but important. Column A houses the account #, Column B has exclusions; Columns C & D has verifiers & column E has the company name. </p>
+	  <img src="Excelsheet.png" height="500px" width="700px">
+ 
+	  <p>The account number must be 12 digits, so we must reformat the data in column A to show all 12 digits. This is done by highlighting the data in column A, right clicking, go to format cells select custom, then in the “type” text box enter 12 zeros, this will format the highlighted data to this format.  In column B sort and remove the term Zen as this data isn’t relevant for our purposes. In column C we need to only include values higher than or equal to 500, anything lower must be excluded. This can be done by using an IF statement. In cell F1 rename the header as “V3 sort”, then in cell F2 insert the following IF formula “=IF(C2>=500,"Include ","Remove")”. Drag this formula all the way down to the last row. Then, in column D, anything that’s listed as “J” needs to be removed from the file, this is done with an additional filter. Lastly, we need to drop the fractional amounts in column C, this can be done using an INT function, in cell G2 place the following function “=INT(C2)” and drag this down to the last row on column C. Once completed, highlight from G2 to the last cell and paste the values in column C. Lastly, we need to copy and paste all the remaining values remaining onto another spreadsheet to upload. </p>
+	  <img src="Excelsheet2.png" height="500px" width="700px">
+	  <p><i>An example of what the file looks like prior to removing columns F & G</i></p>
+
+	  <p>This process continues for each file in the FTP folder and once completed we remove column F titled “V3 sort” and column G prior to submitting for upload. </p>
+      </div>
+      <div class="details">
+      <h2>Details of the New Process:</h2>
+	  <h3>Step1 Setup the files</h3>
+      <p>The first thing that we need to do is create a folder for processing this work. The folder name doesn’t have an impact on the process so name it as you deem fit. Within these main create two additional folders named source file and Staging files. The source files folder is used to maintain the integrity of the original files, while the staging folder is used to process the data. Once completed you should have all your files in both the source files folder and the Staging files folder. Since we process our files in the Staging files folder, we will start the process from there. </p>
+      <p>The files are sent to us using FTP (File Transfer Protocol) the password is the same for each file, for the sake of this writing it’s Password. The first thing that we need to do is create a folder for processing this work. The folder name doesn’t have an impact on the process so name it as you deem fit. Within this main create two additional folders named source file and Staging files. The source files folder is used to maintain the integrity of the original files, while the staging folder is used to process the data. Once completed you should have all your files in both the source files folder and the Staging files folder. Since we process our files in the Staging files folder, we will start the process from there.  </p>
+	<h3>Step 2 Unlocking the excel files</h3>
+	<p>The first thing that we need to do is to unlock all the excel files. Since the password is the same for each file this can best be accomplished by using Visual Basics Applications (<a href="https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office">Visit the VBA Getting Started page)</a>. First open a new excel file on the desktop, click on the Developer tab in the excel Ribbon. If you do not see the developer tab in excel then you would need to activate this setting, please use this guide as a template (<a href="https://www.excelcampus.com/vba/enable-developer-tab/">how to enable VBA)</a></p>
+	<P>We would then click visual basic, insert and then Module. After the process is completed, the screen should look like this.</P>
+	<img src="VBA1.png" height="500px" width="700px">
+
+</div>
+      </div>
+      
+      </body>
+      </html>

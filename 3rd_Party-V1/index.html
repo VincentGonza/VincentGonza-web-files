@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3rd Party files</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			line-height: 1.5;
+			margin: 0;
+			padding: 0;
+		}
+		h1 {
+			font-size: 2rem;
+			font-weight: bold;
+			margin: 0;
+			padding: 1rem;
+			text-align: center;
+		}
+		h2 {
+			font-size: 1.5rem;
+			font-weight: bold;
+			margin-top: 2rem;
+		}
+		p {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+		}
+		ol {
+			margin-top: 1rem;
+			margin-bottom: 1rem;
+			padding-left: 2rem;
+		}
+		li {
+			margin-top: 0.5rem;
+			margin-bottom: 0.5rem;
+		}
+		a {
+			color: #008080;
+			text-decoration: none;
+		}
+		a:hover {
+			text-decoration: underline;
+		}
+		img {
+			max-width: 100%;
+		}
+		.container {
+			margin: 0 auto;
+			max-width: 800px;
+			padding: 1rem;
+		}
+		.process {
+			margin-bottom: 2rem;
+		}
+		.challenge {
+			background-color: #f1f1f1;
+			border-left: 5px solid #008080;
+			margin-bottom: 2rem;
+			padding: 1rem;
+		}
+		.solution {
+			background-color: #d9edf7;
+			border-left: 5px solid #31708f;
+			margin-bottom: 2rem;
+			padding: 1rem;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>3rd Party files</h1>
+		<div class="process">
+			<p><strong>Process:</strong> We receive files from a vendor that is our competitor but due to legal reasons they have to send us the requested data. The data houses information relating to shareholders that we need to upload to our database.</p>
+		</div>
+		<div class="challenge">
+			<h2>Challenge:</h2>
+			<p>The process is manual, each file is password protected, taking 2 to 5 days to complete due to competing priorities, the value of the data can range from 2,500 to 80,000 rows per a file.</p>
+		</div>
+		<div class="solution">
+			<h2>Solution:</h2>
+			<p>Using Excel, VBA and power query this process was streamlined to be completed in 15 minutes. A time savings of 2 to 5 days of manual work.</p>
+			<p>Old process of completing the task - If you would like to skip ahead to the part that I improved, please click <a href="#improvement">here</a>.</p>
+		</div>
+		<div class="details">
+			<h2 id="improvement">Details of the Old Process:</h2>
+			<p>The file(s) aresent via email by the vendor to a specific mailbox that is monitored by the team. The mailbox is checked daily for new files. Once a new file is identified, the file is downloaded and saved to a local drive. </p>
+      <p>Next, the file is opened in Microsoft Excel and the password is entered to unlock the sheet(s). This password is obtained from a secured database that houses all vendor passwords. Once the sheet(s) are unlocked, they are consolidated into one sheet using formulas and manual copy/paste.</p>
+      <p>The data is then filtered for specific criteria, formatted, and uploaded to the database using SQL. The process is repeated for each file.</p>
+      <p>This process can take 2 to 5 days depending on competing priorities and the number of rows of data per file.</p>
+      </div>
+      <div class="details">
+      <h2>Details of the New Process:</h2>
+      <p>A new Excel file was created that uses VBA and power query to automate the process. The new file is opened and the user is prompted to select the files that need to be processed. Once the files are selected, the VBA code unlocks the sheets and consolidates them into one sheet.</p>
+      <p>The data is then automatically filtered, formatted, and uploaded to the database using SQL. The entire process takes 15 minutes, a time savings of 2 to 5 days of manual work.</p>
+      </div>
+      </div>
+      
+      </body>
+      </html>
