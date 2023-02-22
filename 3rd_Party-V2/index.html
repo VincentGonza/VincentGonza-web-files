@@ -73,24 +73,24 @@
 			<p><strong>Note:</strong> All sensitive data has been removed from this document to protect privacy. The data within the cells have factitious values. The processing time and logic remain true.</p>
 		</div>
 		<div class="challenge">
-			<h2>Process:</h2>
-			<p>We receive files from a vendor that is our competitor but due to legal reasons they have to send us the requested data. The data houses information relating to shareholders that we need to upload to our database.</p>
+			<h2>Objective:</h2>
+			<p>To upload shareholder data to meet regulatory requirements. As part of this process, we are obligated by law to obtain specific information relating to shareholders from our competitor. Once we have obtained the necessary data, we will carefully scrub and format it before uploading it to ensure accuracy and compliance.</p>
 		</div>
 		<div class="challenge">
 			<h2>Challenge:</h2>
-			<p>The process is manual, each file is password protected, taking 2 to 5 days to complete due to competing priorities, the value of the data can range from 2,500 to 80,000 rows per a file.</p>
+			<p>The process is manual, due to competing priorities, completing the entire process can take anywhere from 2 to 5 days. Additionally, the row range of each Excel spreadsheet can vary greatly, with some containing 2,500 rows and others containing up to 80,000 rows.</p>
 		</div>
 		<div class="solution">
 			<h2>Solution:</h2>
 			<p>Using Excel, VBA and power query this process was streamlined to be completed in 15 minutes. A time savings of 2 to 5 days of manual work.</p>
-			<p>Old process of completing the task - If you would like to skip ahead to the part that I improved, please click <a href="#improvement">here</a>.</p>
+			<p>The old process of completing this task is below. If you would like to skip ahead to the part that I improved, please click <a href="#improvement">here</a>.</p>
 		</div>
 		<div class="details">
 			<h2 id="improvement">Details of the Old Process:</h2>
-			<p>The file(s) are sent to are sent to us using FTP (File Transfer Protocol) the password is the same for each file, for the sake of this writing it’s Password see image 1 below.  </p>
+			<p>The file(s) are sent to us using FTP (File Transfer Protocol) the password is the same for each file, for the sake of this writing it’s Password see image 1 below. </p>
 			<img src="mockFTP.png" height="500px" width="700px">
 			<p><i>Image 1: Mock FTP folder</i></p>
-      <p>Open the file and input the password, for the sake of this reading it’s Password. The file headers are few but important. Column A houses the account #, Column B has exclusions; Columns C & D has verifiers & column E has the company name. </p>
+      <p>Open the file and input the password, for the sake of this reading it’s Password. The file headers are few but important. Column A houses the account number, Column B has exclusions, Columns C & D has verifiers & column E has the company name. </p>
 	  <img src="Excelsheet.png" height="500px" width="700px">
  
 	  <p>The account number must be 12 digits, so we must reformat the data in column A to show all 12 digits. This is done by highlighting the data in column A, right clicking, go to format cells select custom, then in the “type” text box enter 12 zeros, this will format the highlighted data to this format.  In column B sort and remove the term Zen as this data isn’t relevant for our purposes. In column C we need to only include values higher than or equal to 500, anything lower must be excluded. This can be done by using an IF statement. In cell F1 rename the header as “V3 sort”, then in cell F2 insert the following IF formula “=IF(C2>=500,"Include ","Remove")”. Drag this formula all the way down to the last row. Then, in column D, anything that’s listed as “J” needs to be removed from the file, this is done with an additional filter. Lastly, we need to drop the fractional amounts in column C, this can be done using an INT function, in cell G2 place the following function “=INT(C2)” and drag this down to the last row on column C. Once completed, highlight from G2 to the last cell and paste the values in column C. Lastly, we need to copy and paste all the remaining values remaining onto another spreadsheet to upload. </p>
@@ -102,9 +102,8 @@
       <div class="details">
       <h2>Details of the New Process:</h2>
 	  <h3>Step1 Setup the files</h3>
-      <p>The first thing that we need to do is create a folder for processing this work. The folder name doesn’t have an impact on the process so name it as you deem fit. Within these main create two additional folders named source file and Staging files. The source files folder is used to maintain the integrity of the original files, while the staging folder is used to process the data. Once completed you should have all your files in both the source files folder and the Staging files folder. Since we process our files in the Staging files folder, we will start the process from there. </p>
-      <p>The files are sent to us using FTP (File Transfer Protocol) the password is the same for each file, for the sake of this writing it’s Password. The first thing that we need to do is create a folder for processing this work. The folder name doesn’t have an impact on the process so name it as you deem fit. Within this main create two additional folders named source file and Staging files. The source files folder is used to maintain the integrity of the original files, while the staging folder is used to process the data. Once completed you should have all your files in both the source files folder and the Staging files folder. Since we process our files in the Staging files folder, we will start the process from there.  </p>
-	<h3>Step 2 Unlocking the excel files</h3>
+	  <p>As previously mentioned, the files are transferred to us via FTP (File Transfer Protocol), with the same password for each file. For the purpose of this guide, let's assume the password is "Password". The first step is to create a folder for processing the work. You can name the folder anything you like, as the name won't affect the process. Within this main folder, create two subfolders called "source files" and "staging files". The "source files" folder is where you'll keep the original files to maintain their integrity, while the "staging files" folder is where you'll process the data. Once you're done, all files should be in both the "source files" and "staging files" folders. Since you'll be processing the files in the "staging files" folder, begin the process from there.</p>
+      <h3>Step 2 Unlocking the excel files</h3>
 	<p>The first thing that we need to do is to unlock all the excel files. Since the password is the same for each file this can best be accomplished by using Visual Basics Applications (<a href="https://learn.microsoft.com/en-us/office/vba/library-reference/concepts/getting-started-with-vba-in-office">Visit the VBA Getting Started page)</a>. First open a new excel file on the desktop, click on the Developer tab in the excel Ribbon. If you do not see the developer tab in excel then you would need to activate this setting, please use this guide as a template (<a href="https://www.excelcampus.com/vba/enable-developer-tab/">how to enable VBA)</a></p>
 	<P>We would then click visual basic, insert and then Module. After the process is completed, the screen should look like this.</P>
 	<img src="VBA1.png" height="500px" width="700px">
